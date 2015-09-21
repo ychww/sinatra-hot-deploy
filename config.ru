@@ -1,7 +1,6 @@
 require 'bundler'
-require 'rerun'
+require 'shotgun'
 require 'sinatra'
-require 'sinatra/reloader'
 
 Bundler.require :default
 
@@ -17,4 +16,4 @@ class MyApp < Sinatra::Base
   end
 end
 
-rerun 'run MyApp'
+run MyApp
